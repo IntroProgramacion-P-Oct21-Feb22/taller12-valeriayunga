@@ -32,7 +32,10 @@ public class Problema04 {
                     + "de : %.2f\n",
                     bases[i], potencias[i], suma[i], resultado[i]);
         }
-
+        double sumaArreglo = obtenerSumaArreglo(resultado[0], resultado[1],
+                resultado[2], resultado[3], resultado[4]);
+        System.out.printf("\nLa suma de las posiciones del"
+                + " arreglo resultado es: %.2f", sumaArreglo);
     }
 
     public static double obtenerSuma(double a, double b) {
@@ -55,6 +58,16 @@ public class Problema04 {
         } else {
 
             return base * obtenerPotencia(base, exponente - 1);
+        }
+    }
+
+    public static double obtenerSumaArreglo(double a, double b, double c,
+            double d, double e) {
+        if (b == 0) {
+            return a;
+
+        } else {
+            return 1 + obtenerSuma(a + b + c+d, e - 1);
         }
     }
 
