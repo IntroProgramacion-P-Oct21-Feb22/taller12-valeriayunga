@@ -23,7 +23,9 @@ public class Ejemplo00 {
 }
 ```
 #### Respuesta aquí
+Lo que hace el programa es sumar los elementos de cada posición del arreglo datos utilizando la recursividad, al llamar desde la función principal a la función misterio utilizando los parámetros: datos(arreglo) con el nombre de "arreglo" y datos.length(numero de elementos del arreglo) con el nombre de "tamanio". Luego la función misterio utiliza el condicional "if", si la variable "tamanio" es igual a 1, la función retorna el valor del arreglo en posición o (10), de lo contrario, la función retorna el arreglo en posición del valor de tamanio menos 1, más la función misterio usando la arreglo y tamnio como parámetros, y de esta manera se da inicio a la recursividad, dando como resultado que se retorna el número 17 el cual se presenta en pantalla gracias al System.out.printf de l afunción principal.
 
+Este programa se encuentra explicado más detalladamente en la prueba de escritorio que añadí como archivo exel.
 #### Fin respuesta
 
 ***
